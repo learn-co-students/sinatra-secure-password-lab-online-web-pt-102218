@@ -37,7 +37,7 @@ describe 'App' do
     end
 
   end
-=begin
+
   describe "Logging In" do
     it "displays Log In Page" do
       get '/login'
@@ -71,12 +71,12 @@ describe 'App' do
       fill_in "username", :with => "penelope"
       fill_in "password", :with => "puppies"
       click_button "Log In"
-      expect(page.current_path).to eq('/account')
+      expect(page.current_path).to eq('/')
       expect(page.status_code).to eq(200)
       expect(page.body).to include("We are currently working on your account.")
     end
   end
-=end
+
   describe "GET '/logout'" do
     it "clears the session" do
       get '/logout'
