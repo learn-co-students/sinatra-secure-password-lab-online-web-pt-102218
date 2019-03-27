@@ -12,6 +12,7 @@ gem 'rack_session_access'
 gem 'rack-test'
 gem 'shotgun'
 gem 'pry'
+gem 'json', '<=2.2.0'
 
 group :development do
   gem 'sqlite3'
